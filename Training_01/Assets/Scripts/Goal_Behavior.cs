@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Goal_Behavior : MonoBehaviour
 {
+
+    public UIManager UIman;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -12,8 +14,8 @@ public class Goal_Behavior : MonoBehaviour
             GameController.gc.isControllable = false;
             GameController.gc.RestoreLight();
 
-
-            //Call Victory Sceen
+            UIman.WinGame();
+            
         }
     }
 }

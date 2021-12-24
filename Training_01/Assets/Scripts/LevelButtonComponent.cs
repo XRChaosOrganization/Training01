@@ -10,6 +10,7 @@ public class LevelButtonComponent : MonoBehaviour
     public List<Transform> cameraRootsList;
     public UIManager uiMan;
     public GameObject levelContainer;
+    
 
     public void InstantiateLevel()
     {
@@ -38,6 +39,7 @@ public class LevelButtonComponent : MonoBehaviour
     
     public void ResetGame()
     {
+        Time.timeScale = 1;
         Destroy(levelContainer);
     }
 }

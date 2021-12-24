@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public GameObject pauseMenu;
     public bool isGamePausable;
     public GameObject levelContainer;
+    public GameObject winScreen;
 
     public void Update()
     {
@@ -35,6 +36,10 @@ public class UIManager : MonoBehaviour
         gameCanvas.SetActive(false);
         pauseMenu.SetActive(false);
     }
-    
+    public void WinGame()
+    {
+        gameCanvas.SetActive(true);
+        winScreen.SetActive(true);
+    }
    
 }
