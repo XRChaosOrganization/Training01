@@ -7,7 +7,7 @@ public class Collectible_Behavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collected !");
+        GameController.gc.RestoreLight();
         Destroy(this.gameObject);
     }
 }

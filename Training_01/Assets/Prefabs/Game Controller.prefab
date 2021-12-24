@@ -44,4 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRB: {fileID: 0}
+  lSource: {fileID: 0}
+  lightTimer: 8
+  lRecoverSpeed: 2
   moveSpeed: 20
+  isLevelStarted: 0

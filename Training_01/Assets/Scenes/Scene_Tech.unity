@@ -675,6 +675,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightTimer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lRecoverSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[0].value
+      value: 0.3999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[0].inSlope
+      value: 0.6000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[1].inSlope
+      value: 0.6000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[0].outSlope
+      value: 0.6000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[1].outSlope
+      value: 0.6000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214660163199131780, guid: cd715103da79f574ab72543132a3f109, type: 3}
+      propertyPath: lightDecrease.m_Curve.Array.data[1].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
     - target: {fileID: 2214660163199131782, guid: cd715103da79f574ab72543132a3f109, type: 3}
       propertyPath: m_Name
       value: Game Controller
