@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
     bool loosingLight;
     bool gainingLight;
     float lerpStart;
-    static float lerpTime;
+    static float lerpTimeScale;
 
 
 
@@ -98,10 +98,10 @@ public class GameController : MonoBehaviour
 
     void LightLerp()
     {
-        lSource.pointLightOuterRadius = Mathf.Lerp(lerpStart, maxLight, lerpTime);
-        lerpTime += lRecoverSpeed * Time.deltaTime;
+        lSource.pointLightOuterRadius = Mathf.Lerp(lerpStart, maxLight, lerpTimeScale);
+        lerpTimeScale += lRecoverSpeed * Time.deltaTime;
 
-        if (lerpTime >= 1f)
+        if (lerpTimeScale >= 1f)
             ResetLerp();
 
     }
@@ -109,7 +109,7 @@ public class GameController : MonoBehaviour
     void ResetLerp()
     {
         gainingLight = false;
-        lerpTime = 0f;
+        lerpTimeScale = 0f;
         t = lightTimer;
         loosingLight = true;
     }
