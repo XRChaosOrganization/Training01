@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     public float moveSpeed;
 
     [HideInInspector] public bool isLevelStarted;
+    [HideInInspector] public bool isControllable;
 
     bool loosingLight;
     bool gainingLight;
@@ -49,7 +50,8 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        HandleMovement();
+        if(isControllable)
+            HandleMovement();
 
         if (loosingLight && isLevelStarted)
             LightShrink();
@@ -81,8 +83,10 @@ public class GameController : MonoBehaviour
          
     }
 
+    //Call This Method from anywhere to start the level
     public void StartLevel()
     {
+        isControllable = true;
         t = lightTimer;
         isLevelStarted = true;
         loosingLight = true;
@@ -110,8 +114,13 @@ public class GameController : MonoBehaviour
     {
         gainingLight = false;
         lerpTimeScale = 0f;
-        t = lightTimer;
-        loosingLight = true;
+
+        if (isLevelStarted)
+        {
+            t = lightTimer;
+            loosingLight = true;
+        }
+        
     }
 
 }
