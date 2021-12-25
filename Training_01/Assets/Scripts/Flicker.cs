@@ -7,6 +7,7 @@ public class Flicker : MonoBehaviour
 {
     
     public bool isLight;
+    public bool intensity;
     Light2D lSource;
     
 
@@ -14,6 +15,7 @@ public class Flicker : MonoBehaviour
 
     public Vector2 timerRange;
     public Vector2 sizeRange;
+    public Vector2 intensityRange;
     float size;
 
 
@@ -43,9 +45,12 @@ public class Flicker : MonoBehaviour
         {
             size = Random.Range(sizeRange.x, sizeRange.y);
 
-            if (isLight)
+            if (isLight && !intensity)
                 lSource.pointLightOuterRadius = size;
+            else if (isLight && intensity)
+                lSource.intensity = Random.Range(intensityRange.x, intensityRange.y);
             else transform.localScale = new Vector2(size, size);
+
 
             timerMax = Random.Range(timerRange.x, timerRange.y);
             timer = timerMax;
