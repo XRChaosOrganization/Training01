@@ -5,7 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class Flicker : MonoBehaviour
 {
-    
+    public bool isOn;
     public bool isLight;
     public bool intensity;
     Light2D lSource;
@@ -38,24 +38,27 @@ public class Flicker : MonoBehaviour
 
     private void Update()
     {
-
-        timer -= Time.deltaTime;
-
-        if (timer <= 0)
+        if (isOn)
         {
-            size = Random.Range(sizeRange.x, sizeRange.y);
+            timer -= Time.deltaTime;
 
-            if (isLight && !intensity)
-                lSource.pointLightOuterRadius = size;
-            else if (isLight && intensity)
-                lSource.intensity = Random.Range(intensityRange.x, intensityRange.y);
-            else transform.localScale = new Vector2(size, size);
+            if (timer <= 0)
+            {
+                size = Random.Range(sizeRange.x, sizeRange.y);
+
+                if (isLight && !intensity)
+                    lSource.pointLightOuterRadius = size;
+                else if (isLight && intensity)
+                    lSource.intensity = Random.Range(intensityRange.x, intensityRange.y);
+                else transform.localScale = new Vector2(size, size);
 
 
-            timerMax = Random.Range(timerRange.x, timerRange.y);
-            timer = timerMax;
+                timerMax = Random.Range(timerRange.x, timerRange.y);
+                timer = timerMax;
 
+            }
         }
+        
 
     }
 }
