@@ -9,7 +9,7 @@ public class SplineFollow : MonoBehaviour
     public PathCreator spline;
     public EndOfPathInstruction end;
     public AnimationCurve speed;
-    float traveledDst;
+    [HideInInspector] public float traveledDst;
 
 
 
