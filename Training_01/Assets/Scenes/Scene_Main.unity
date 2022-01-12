@@ -1191,7 +1191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &267527325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18304,7 +18304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &769958901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25870,13 +25870,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6125525797867105011, guid: e08a52c9b82508e4399a466b2ffda604, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 38577fb2583212a41ba5e43115586c60, type: 2}
     - target: {fileID: 6125525798845566248, guid: e08a52c9b82508e4399a466b2ffda604, type: 3}
       propertyPath: m_Name
       value: Level1_Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 6125525798845566248, guid: e08a52c9b82508e4399a466b2ffda604, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6125525798845566251, guid: e08a52c9b82508e4399a466b2ffda604, type: 3}
       propertyPath: m_RootOrder
@@ -27948,7 +27952,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.4
+  orthographic size: 12.99
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -27972,7 +27976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040734219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -32.9}
+  m_LocalPosition: {x: 0, y: 1.41, z: -32.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
